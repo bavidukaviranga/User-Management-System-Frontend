@@ -1,0 +1,107 @@
+/* Material UI Inspired Navigation Styles */
+
+div {
+    background-color: #1976d2;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.home-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.home-li {
+    margin: 0 8px;
+    position: relative;
+}
+
+.home-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 16px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.0892857143em;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.home-a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.home-a.active {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.home-li h1 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.0892857143em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        padding: 0 16px;
+        height: 56px;
+    }
+
+    .home-ul {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .home-li {
+        margin: 4px 0;
+        width: 100%;
+    }
+
+    .home-a {
+        justify-content: flex-start;
+        height: 48px;
+        padding: 0 16px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-a {
+        font-size: 13px;
+        padding: 0 12px;
+    }
+
+    .home-li h1 {
+        font-size: 13px;
+    }
+}
+
+/* Focus States */
+.home-a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
