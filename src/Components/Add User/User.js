@@ -6,7 +6,7 @@ function AddUser() {
   return (
     <div>
        <Nav/> 
-      <h1>Add User</h1>
+          <h1>Add User</h1>
     </div>
   )
 }
